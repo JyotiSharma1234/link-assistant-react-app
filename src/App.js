@@ -1,18 +1,18 @@
 import './App.css';
 import Logo from './images/image.png';
+import MainContent from './components/MainContent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <img src={Logo}/>
-      <div>
-        tiny link<input type='text'/><br/>
-        expanded link<input type='text'/>
-      </div>
-      </header>
-    </div>
-  );
+function App(props) {
+
+    return (
+        <div className="App">
+            <header className="App-header">
+              Link Assistance
+                {/* <img alt={'Link-Assitance'} src={Logo}/> */}
+            </header>
+            <MainContent/>
+        </div>
+    );
 }
 
 export default App;

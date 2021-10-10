@@ -1,5 +1,13 @@
 {
   "manifest_version": 2,
+  "permissions": [
+    "debugger",
+    "activeTab",
+    "tabs",
+    "background",
+    "https://*/",
+    "http://*/"
+  ],
   "version": "1.0",
   "name": "Link Assistant React",
   "description": "Link Assistance helps you shorten, expand your url and create a QR code for your url.",
