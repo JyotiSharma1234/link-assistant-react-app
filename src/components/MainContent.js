@@ -20,6 +20,10 @@ const useStyles = makeStyles({
   textFeild: {
     margin: "10px !important",
     width: '-webkit-fill-available'
+  },
+  footer: {
+      marginTop: 10,
+      fontSize: 10
   }
 });
 function MainContent(props) {
@@ -57,9 +61,15 @@ console.log(QRCodeData)
                         <SendIcon />
                     </IconButton>
                 </Box>
-                {QRCodeData && <Box className={classes.qrcodeContainer}>
-                    <QRCode value={QRCodeData} size={148} level={'M'} />
-                </Box>}
+                {
+                    QRCodeData && <Box className={classes.qrcodeContainer}>
+                        <QRCode value={QRCodeData} size={148} level={'M'} />
+                    </Box>
+                }
+                <Box className={classes.footer}>
+                    © 2021, Built with ❤️ by Jyoti Sharma
+                </Box>
+
         </Box>
     );
 }
